@@ -50,7 +50,8 @@ class Tube:
 
 
 # This function takes a filename argument, looks for that file in the current directory, reads it into a string,
-# and edits the string for clarity.
+# and edits the string for clarity.  It then creates lists and variables to be used as arguments later when
+# the Tube class is instantiated.
 def importTubeDataFile(fileToOpen):
     #  File is chosen, now read it into a string and print the string to the screen.
     while True:
@@ -135,6 +136,5 @@ if __name__ == '__main__':
   main()
 
 
-#  New object is added to a master list or dictionary
 
 
