@@ -71,29 +71,38 @@ def importTubeDataFile(fileToOpen):
 
             anodeVoltage = tubeDataList[1]
 
+            # The rest of the values in the list alternate between voltage and current measurements
+            # Therefore, we'll iterate across them in steps of two to separate the voltage from the currents.
+
+            # Create the list of voltages
             xValues = []
             for i in tubeDataList[2::2]:
                 xValues.append(i)
 
+            # Create the list of currents
             yValues = []
             for i in tubeDataList[3::2]:
                 yValues.append(i)
 
+            # Parse the filename to retrieve the unique ID without the file extension
             tubeID = fileToOpen[:-4]
 
+
+        #  I left this error handler in from earlier experimentation, but in reality it should never be called
+        #  since the read() command looks for files that were just discovered nanoseconds earlier and are most likely
+        #  still in the chosenFolder.
         except FileNotFoundError:
             print("The file named ", fileToOpen, " could not be found in the directory.")
             break
 
         return tubeID, anodeVoltage, xValues, yValues
 
-def showDictionary(dictName):
-    print(dir(dictName))
 
 def main():
 
     masterTubeDict = {}
-    chosenFolder = chooseFolder()
+    chosenFolder = chooseFolder()  # Prompt the user to choose a folder, then store the path as str(chosenFolder)
+
     # Change working directory to the chosenFolder
     os.chdir(chosenFolder)
 
@@ -119,12 +128,9 @@ def main():
     keylist = masterTubeDict.keys()
     for key in keylist:
         lookupTube = masterTubeDict[key]
-        lookedupTubeID = lookupTube.get_tubeID()
-        lookedupXvalues = lookupTube.get_xValues()
-        lookedupYvalues = lookupTube.get_yValues()
-        print("Found tube ", lookedupTubeID, "with X values", lookedupXvalues, "and Y values", lookedupYvalues)
+        print("Found tube ", lookupTube.get_tubeID(), "with X values", lookupTube.get_xValues(),
+              "and Y values", lookupTube.get_yValues())
 
-    showDictionary(masterTubeDict)
 
     print("\nThe Master Tube Dictionary now contains the following entries:")
     for i in masterTubeDict.keys():
