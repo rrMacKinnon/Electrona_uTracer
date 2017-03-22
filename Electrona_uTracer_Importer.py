@@ -3,14 +3,14 @@
 #  additional attributes can be added as ideas come up:  timestamp, etc.
 
 import os   # needed for directory and file interaction
-from  tkinter import *
+import tkinter
 from  tkinter import filedialog
 
 
 # Prompt the user to select a folder containing uTracer files
 def chooseFolder():
 
-    root = Tk()
+    root = tkinter.Tk()
     root.withdraw()
     root.directory = filedialog.askdirectory(title='Please select a directory containing uTracer files')
     chosenFolder = root.directory
