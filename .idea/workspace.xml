@@ -2,62 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5baf35b-9467-477b-af21-355d264abbee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/10.utd" afterPath="$PROJECT_DIR$/SampleTubeData/10.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/11.utd" afterPath="$PROJECT_DIR$/SampleTubeData/11.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/12.utd" afterPath="$PROJECT_DIR$/SampleTubeData/12.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/14.utd" afterPath="$PROJECT_DIR$/SampleTubeData/14.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/15.utd" afterPath="$PROJECT_DIR$/SampleTubeData/15.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/16.utd" afterPath="$PROJECT_DIR$/SampleTubeData/16.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/17.utd" afterPath="$PROJECT_DIR$/SampleTubeData/17.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/18.utd" afterPath="$PROJECT_DIR$/SampleTubeData/18.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/19.utd" afterPath="$PROJECT_DIR$/SampleTubeData/19.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/20.utd" afterPath="$PROJECT_DIR$/SampleTubeData/20.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/21.utd" afterPath="$PROJECT_DIR$/SampleTubeData/21.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/22.utd" afterPath="$PROJECT_DIR$/SampleTubeData/22.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/23.utd" afterPath="$PROJECT_DIR$/SampleTubeData/23.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/24.utd" afterPath="$PROJECT_DIR$/SampleTubeData/24.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/25.utd" afterPath="$PROJECT_DIR$/SampleTubeData/25.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/26.utd" afterPath="$PROJECT_DIR$/SampleTubeData/26.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/27.utd" afterPath="$PROJECT_DIR$/SampleTubeData/27.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/28.utd" afterPath="$PROJECT_DIR$/SampleTubeData/28.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/29.utd" afterPath="$PROJECT_DIR$/SampleTubeData/29.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/3.utd" afterPath="$PROJECT_DIR$/SampleTubeData/3.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/30.utd" afterPath="$PROJECT_DIR$/SampleTubeData/30.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/31.utd" afterPath="$PROJECT_DIR$/SampleTubeData/31.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/32.utd" afterPath="$PROJECT_DIR$/SampleTubeData/32.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/33.utd" afterPath="$PROJECT_DIR$/SampleTubeData/33.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/34.utd" afterPath="$PROJECT_DIR$/SampleTubeData/34.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/35.utd" afterPath="$PROJECT_DIR$/SampleTubeData/35.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/36.utd" afterPath="$PROJECT_DIR$/SampleTubeData/36.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/37.utd" afterPath="$PROJECT_DIR$/SampleTubeData/37.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/38.utd" afterPath="$PROJECT_DIR$/SampleTubeData/38.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/4.utd" afterPath="$PROJECT_DIR$/SampleTubeData/4.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/40.utd" afterPath="$PROJECT_DIR$/SampleTubeData/40.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/42.utd" afterPath="$PROJECT_DIR$/SampleTubeData/42.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/43.utd" afterPath="$PROJECT_DIR$/SampleTubeData/43.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/44.utd" afterPath="$PROJECT_DIR$/SampleTubeData/44.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/45.utd" afterPath="$PROJECT_DIR$/SampleTubeData/45.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/46.utd" afterPath="$PROJECT_DIR$/SampleTubeData/46.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/47.utd" afterPath="$PROJECT_DIR$/SampleTubeData/47.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/48.utd" afterPath="$PROJECT_DIR$/SampleTubeData/48.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/49.utd" afterPath="$PROJECT_DIR$/SampleTubeData/49.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/5.utd" afterPath="$PROJECT_DIR$/SampleTubeData/5.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/50.utd" afterPath="$PROJECT_DIR$/SampleTubeData/50.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/6.utd" afterPath="$PROJECT_DIR$/SampleTubeData/6.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/7.utd" afterPath="$PROJECT_DIR$/SampleTubeData/7.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/8.utd" afterPath="$PROJECT_DIR$/SampleTubeData/8.utd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/9.utd" afterPath="$PROJECT_DIR$/SampleTubeData/9.utd" />
-    </list>
-    <list id="813752e4-9824-42af-bb50-b6e0acd22224" name="Failed commit: Default" comment="Changed the 'from tkinter import *' statement to 'import tkinter' and updated the references to it explicitly.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Electrona_uTracer_Importer.py" afterPath="$PROJECT_DIR$/Electrona_uTracer_Importer.py" />
     </list>
-    <list id="369ee032-bfdd-4eec-bf1d-3e0281183ed1" name="sampleData" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/1.utd" afterPath="$PROJECT_DIR$/SampleTubeData/1.utd" />
-    </list>
+    <list id="813752e4-9824-42af-bb50-b6e0acd22224" name="Failed commit: Default" comment="Changed the 'from tkinter import *' statement to 'import tkinter' and updated the references to it explicitly." />
+    <list id="369ee032-bfdd-4eec-bf1d-3e0281183ed1" name="sampleData" comment="" />
     <ignored path="Electrona_uTracer.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <file path="$PROJECT_DIR$/Electrona_uTracer_Importer.py" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,35 +25,15 @@
     <favorites_list name="Electrona_uTracer" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Electrona_uTracer_Importer.py" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Electrona_uTracer_Importer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2222223">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.44198895">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#267#322#0" expanded="true" />
+                <element signature="e#199#254#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="whatevs.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/whatevs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3738657">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dictionatyPractice.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dictionatyPractice.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -125,16 +57,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/thing.py" />
-        <option value="$PROJECT_DIR$/Electrona_uTracer_Importer.py" />
         <option value="$PROJECT_DIR$/whatevs.py" />
         <option value="$PROJECT_DIR$/dictionatyPractice.py" />
+        <option value="$PROJECT_DIR$/1.utd" />
+        <option value="$PROJECT_DIR$/importTubeDataFile_experiments.py" />
+        <option value="$PROJECT_DIR$/Electrona_uTracer_Importer.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="3" />
     <option name="y" value="22" />
     <option name="width" value="1680" />
-    <option name="height" value="979" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -192,11 +127,14 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.dictionatyPractice">
+  <component name="RunManager" selected="Python.Electrona_uTracer_Importer">
     <configuration default="false" name="thing" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +182,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Electrona_uTracer" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dictionatyPractice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="importTubeDataFile_experiments" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Electrona_uTracer" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/importTubeDataFile_experiments.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -387,17 +342,19 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Electrona_uTracer_Importer" />
       <item index="1" class="java.lang.String" itemvalue="Python.thing" />
       <item index="2" class="java.lang.String" itemvalue="Python.whatevs" />
       <item index="3" class="java.lang.String" itemvalue="Python.dictionatyPractice" />
+      <item index="4" class="java.lang.String" itemvalue="Python.importTubeDataFile_experiments" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.dictionatyPractice" />
-        <item index="1" class="java.lang.String" itemvalue="Python.whatevs" />
-        <item index="2" class="java.lang.String" itemvalue="Python.thing" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.importTubeDataFile_experiments" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dictionatyPractice" />
+        <item index="2" class="java.lang.String" itemvalue="Python.whatevs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.thing" />
       </list>
     </recent_temporary>
   </component>
@@ -431,20 +388,27 @@
       <option name="project" value="LOCAL" />
       <updated>1489953800721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Reworked everything after initial meeting with Anish.  There are significantly fewer lines of code now.">
+      <created>1490481285351</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1490481285351</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="979" extended-state="0" />
+    <frame x="3" y="22" width="1680" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19650392" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32752612" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32744405" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -454,7 +418,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -473,7 +436,8 @@
     <MESSAGE value="Setting up dedicated project for the Electrona_uTracer project." />
     <MESSAGE value="Editing with more scrutiny since I know Anish is now looking at my code!  Made a few cleanups and found a couple of spots to implement more efficient code." />
     <MESSAGE value="Changed the 'from tkinter import *' statement to 'import tkinter' and updated the references to it explicitly." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed the 'from tkinter import *' statement to 'import tkinter' and updated the references to it explicitly." />
+    <MESSAGE value="Reworked everything after initial meeting with Anish.  There are significantly fewer lines of code now." />
+    <option name="LAST_COMMIT_MESSAGE" value="Reworked everything after initial meeting with Anish.  There are significantly fewer lines of code now." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -482,6 +446,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#199#254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/whatevs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dictionatyPractice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -507,19 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72232306">
           <caret line="116" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="143" selection-end-column="13" />
-          <folding>
-            <element signature="e#472#483#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2222223">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding>
-            <element signature="e#267#322#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -533,9 +510,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/whatevs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3738657">
+        <state vertical-scroll-proportion="0.0">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1.utd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/importTubeDataFile_experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16574585">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44198895">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#199#254#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

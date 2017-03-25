@@ -1,13 +1,11 @@
-#  This program should be able to read and process the text files produced by the uTracer.
-#  The result should be a tube object for each tube serial number containing all the measurement data
-#  additional attributes can be added as ideas come up:  timestamp, etc.
+#  This program reads and processes the text files produced by the uTracer, resulting in a master_tube_dict containing
+#  tube objects which each contain voltages, currents, and related attributes.
 
 import os   # needed for directory and file interaction
 import tkinter
 from tkinter import filedialog
 
 
-# Tube class creates a tube object with all the properly assigned attributes
 class Tube:
 
     def __init__(self, tube_ID, x_values, y_values, anode_voltage):
@@ -17,7 +15,7 @@ class Tube:
         self.anode_voltage = anode_voltage
 
 
-# Prompt the user to select a folder containing uTracer files
+# Prompt the user to select a folder containing uTracer files, and return a list of all the files with the .utd ext
 def choose_folder():
     root = tkinter.Tk()
     root.withdraw()
@@ -33,7 +31,7 @@ def choose_folder():
 
 
 # This function takes a filename argument, looks for that file in the current directory, reads it into a string,
-# then generates lists and variables which are passed in as arguments when the Tube class is instantiated.
+# then generates lists and variables which are passed as arguments during Tube class instantiation.
 def import_tube_data_file(file_to_open):
     while True:
         try:
@@ -48,21 +46,23 @@ def import_tube_data_file(file_to_open):
         finally:
                 return tube_object
 
-def main() -> object:
+def main():
+    #  master_tube_dict is a dictionary for storing all the Tube objects
     master_tube_dict = {}
 
     # Prompt the user to choose a folder, then make a list of all the files in the chosen directory to be processed
     batch_list = choose_folder()
-    print("The following .utc files were found in the specified directory:")
-    print(batch_list)
+
+    # Read and process every file in the batch_list, then add each one to the master_tube_dict
     for tube in batch_list:
         tube_object = import_tube_data_file(tube)
         master_tube_dict.update({tube_object.tube_ID: tube_object})
 
-# Show off the fancy new master_tube_dict with all the tube objects
+    # Print the number of tube objects that were created
     key_list = master_tube_dict.keys()
     print("\n", len(key_list), "tubes were added to the Master Tube Dictionary.")
 
+    # Lookup each tube in the master_tube_dict and print all its values
     for key in key_list:
         lookup_tube = master_tube_dict[key]
         print("Tube number", lookup_tube.tube_ID, "with X values", lookup_tube.x_values,
