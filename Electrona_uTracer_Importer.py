@@ -4,138 +4,69 @@
 
 import os   # needed for directory and file interaction
 import tkinter
-from  tkinter import filedialog
-
-
-# Prompt the user to select a folder containing uTracer files
-def chooseFolder():
-
-    root = tkinter.Tk()
-    root.withdraw()
-    root.directory = filedialog.askdirectory(title='Please select a directory containing uTracer files')
-    chosenFolder = root.directory
-    print("chosenFolder:", chosenFolder)
-    return chosenFolder
-
-
-#  Get the contents of a specified directory and build a list of all .utd files
-def buildBatchList(chosenFolder):
-
-    listOfTubeDataFilesInDir = []
-
-    for file in os.listdir(chosenFolder):
-
-        if file.endswith(".utd"):
-            listOfTubeDataFilesInDir.append(file)
-
-    return listOfTubeDataFilesInDir
+from tkinter import filedialog
 
 
 # Tube class creates a tube object with all the properly assigned attributes
 class Tube:
 
-    def __init__(self, tubeID, xValues, yValues):
-        self.tubeID = tubeID
-        self.xValues = xValues
-        self.yValues = yValues
+    def __init__(self, tube_ID, x_values, y_values, anode_voltage):
+        self.tube_ID = tube_ID
+        self.x_values = x_values
+        self.y_values = y_values
+        self.anode_voltage = anode_voltage
 
-    def get_tubeID(self):
-        return self.tubeID
 
-    def get_xValues(self):
-        return self.xValues
-
-    def get_yValues(self):
-        return self.yValues
+# Prompt the user to select a folder containing uTracer files
+def choose_folder():
+    root = tkinter.Tk()
+    root.withdraw()
+    root.directory = filedialog.askdirectory(title='Please select a directory containing uTracer files')
+    chosen_folder = root.directory
+    os.chdir(chosen_folder)
+    print("chosen_folder:", chosen_folder)
+    list_of_tube_data_files_in_dir = []
+    for file in os.listdir(chosen_folder):
+        if file.endswith(".utd"):
+            list_of_tube_data_files_in_dir.append(file)
+    return list_of_tube_data_files_in_dir
 
 
 # This function takes a filename argument, looks for that file in the current directory, reads it into a string,
-# and edits the string for clarity.  It then creates lists and variables to be used as arguments later when
-# the Tube class is instantiated.
-def importTubeDataFile(fileToOpen):
-    #  File is chosen, now read it into a string and print the string to the screen.
+# then generates lists and variables which are passed in as arguments when the Tube class is instantiated.
+def import_tube_data_file(file_to_open):
     while True:
         try:
+            with open(file_to_open, 'r') as file:
+                file_contents_string = str(file.read())
+                file_contents_list = file_contents_string.split()
+                x_values = [i for i in file_contents_list[8::2]]
+                y_values = [i for i in file_contents_list[9::2]]
+                anode_voltage = file_contents_list[6]
+                tube_ID = file_to_open[:-4]
+                tube_object = Tube(tube_ID, x_values, y_values, anode_voltage)
+        finally:
+                return tube_object
 
-            # Read the contents of the file into a string
-            linestring = open(fileToOpen, 'r').read()
-            #  Split the string into a list
-            tubeDataList = (linestring.split())
+def main() -> object:
+    master_tube_dict = {}
 
-            #  Delete the column headers at the front of the text file
-            del tubeDataList[0:6]
-            del tubeDataList[1]
-
-            # Add "Va" to the 0 position in the list
-            tubeDataList.insert(0, "Va")
-
-            anodeVoltage = tubeDataList[1]
-
-            # The rest of the values in the list alternate between voltage and current measurements
-            # Therefore, we'll iterate across them in steps of two to separate the voltage from the currents.
-
-            # Create the list of voltages
-            xValues = []
-            for i in tubeDataList[2::2]:
-                xValues.append(i)
-
-            # Create the list of currents
-            yValues = []
-            for i in tubeDataList[3::2]:
-                yValues.append(i)
-
-            # Parse the filename to retrieve the unique ID without the file extension
-            tubeID = fileToOpen[:-4]
-
-
-        #  I left this error handler in from earlier experimentation, but in reality it should never be called
-        #  since the read() command looks for files that were just discovered nanoseconds earlier and are most likely
-        #  still in the chosenFolder.
-        except FileNotFoundError:
-            print("The file named ", fileToOpen, " could not be found in the directory.")
-            break
-
-        return tubeID, anodeVoltage, xValues, yValues
-
-
-def main():
-
-    masterTubeDict = {}
-    chosenFolder = chooseFolder()  # Prompt the user to choose a folder, then store the path as str(chosenFolder)
-
-    # Change working directory to the chosenFolder
-    os.chdir(chosenFolder)
-
-    # Make a batchlist of all the files to be processed
-    batchList = buildBatchList(chosenFolder)
+    # Prompt the user to choose a folder, then make a list of all the files in the chosen directory to be processed
+    batch_list = choose_folder()
     print("The following .utc files were found in the specified directory:")
-    print(batchList)
-    for tube in batchList:
-        print('\n', "Filename", tube, "has been chosen")
-        tubeFocus = importTubeDataFile(tube)
-        print(tubeFocus)
-        tubeID = tubeFocus[0] + '_5749'
-        print('The TubeID is', tubeID)
-        xValues = tubeFocus[2]
-        print("The xValues are", xValues)
-        yValues = tubeFocus[3]
-        print("The yValues are", yValues)
-        tubeObject = Tube(tubeID, xValues, yValues)
-        masterTubeDict.update({tubeID: tubeObject})
+    print(batch_list)
+    for tube in batch_list:
+        tube_object = import_tube_data_file(tube)
+        master_tube_dict.update({tube_object.tube_ID: tube_object})
 
-# Show off the fancy new MasterTubeDict with all the tube objects
-    print("\n ...and now to verify that the new tube object is in the MasterTubeDict...")
-    keylist = masterTubeDict.keys()
-    for key in keylist:
-        lookupTube = masterTubeDict[key]
-        print("Found tube ", lookupTube.get_tubeID(), "with X values", lookupTube.get_xValues(),
-              "and Y values", lookupTube.get_yValues())
+# Show off the fancy new master_tube_dict with all the tube objects
+    key_list = master_tube_dict.keys()
+    print("\n", len(key_list), "tubes were added to the Master Tube Dictionary.")
 
-
-    print("\nThe Master Tube Dictionary now contains the following entries:")
-    for i in masterTubeDict.keys():
-        print(i)
-
+    for key in key_list:
+        lookup_tube = master_tube_dict[key]
+        print("Tube number", lookup_tube.tube_ID, "with X values", lookup_tube.x_values,
+              "and Y values", lookup_tube.y_values)
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
