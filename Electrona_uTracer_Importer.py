@@ -4,16 +4,19 @@
 import os   # needed for directory and file interaction
 import tkinter
 from tkinter import filedialog
+import tkinter.simpledialog as simpledialog
 
+
+global tube_type
 
 class Tube:
 
-    def __init__(self, tube_ID, x_values, y_values, anode_voltage):
+    def __init__(self, tube_ID, x_values, y_values, anode_voltage, tube_type='5749'):
         self.tube_ID = tube_ID
         self.x_values = x_values
         self.y_values = y_values
         self.anode_voltage = anode_voltage
-
+        self.tube_type = tube_type
 
 # Prompt the user to select a folder containing uTracer files, and return a list of all the files with the .utd ext
 def choose_folder():
@@ -28,6 +31,14 @@ def choose_folder():
         if file.endswith(".utd"):
             list_of_tube_data_files_in_dir.append(file)
     return list_of_tube_data_files_in_dir
+
+
+def ask_tube_type(prompt = 'Please enter the Tube Type:', confirm = 0):
+    while True:
+        tube_type = simpledialog.askstring('Tube Type:', 'Please enter the tube type\n for this batch of tubes')
+        if not confirm:
+            return tube_type
+
 
 
 # This function takes a filename argument, looks for that file in the current directory, reads it into a string,
@@ -53,9 +64,12 @@ def main():
     # Prompt the user to choose a folder, then make a list of all the files in the chosen directory to be processed
     batch_list = choose_folder()
 
+    tube_type = ask_tube_type('Example: 12AX7, 12BH7, 5759, 6L6GC, 6080, etc.', confirm=0)
+
     # Read and process every file in the batch_list, then add each one to the master_tube_dict
     for tube in batch_list:
         tube_object = import_tube_data_file(tube)
+        tube_object.tube_type = tube_type
         master_tube_dict.update({tube_object.tube_ID: tube_object})
 
     # Print the number of tube objects that were created
@@ -65,7 +79,7 @@ def main():
     # Lookup each tube in the master_tube_dict and print all its values
     for key in key_list:
         lookup_tube = master_tube_dict[key]
-        print("Tube number", lookup_tube.tube_ID, "with X values", lookup_tube.x_values,
+        print("Tube number", lookup_tube.tube_ID, "is of type", lookup_tube.tube_type, "with X values", lookup_tube.x_values,
               "and Y values", lookup_tube.y_values)
 
 # This is the standard boilerplate that calls the main() function.
