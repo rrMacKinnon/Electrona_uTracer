@@ -3,7 +3,7 @@ import tkinter as tk
 class ExampleApp(tk.Tk):
     def __init__(self):
         tk.Tk.__init__(self)
-        t = SimpleTable(self, 10,2)
+        t = SimpleTable(self, 40,2)
         t.pack(side="top", fill="x")
         t.set(0,0,"Hello, world")
 
@@ -30,6 +30,9 @@ class SimpleTable(tk.Frame):
         widget = self._widgets[row][column]
         widget.configure(text=value)
 
+
 if __name__ == "__main__":
     app = ExampleApp()
     app.mainloop()
+
+

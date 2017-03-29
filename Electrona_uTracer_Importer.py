@@ -40,7 +40,6 @@ def ask_tube_type(prompt = 'Please enter the Tube Type:', confirm = 0):
             return tube_type
 
 
-
 # This function takes a filename argument, looks for that file in the current directory, reads it into a string,
 # then generates lists and variables which are passed as arguments during Tube class instantiation.
 def import_tube_data_file(file_to_open):
@@ -57,6 +56,28 @@ def import_tube_data_file(file_to_open):
         finally:
                 return tube_object
 
+
+# def least_squares(master_tube_dict, ref_tube):
+#     tube_list = master_tube_dict.keys()
+#     ref_tube = master_tube_dict.get(ref_tube)
+#     print(type(ref_tube))
+#     ref_tube_y_values = ref_tube.y_values
+#     print(ref_tube_y_values)
+#
+#     return other_tubes
+#
+# def chooseTube(master_tube_dict):
+#     ref_tube = input('Enter the tube number to be matched')
+#     if ref_tube in master_tube_dict.keys():
+#         print("We're going to match tube", ref_tube, "which has the following values:")
+#
+#     else:
+#         print("There's no tube in the Master Tube Dictionary with that name.")
+#     return # least squares lists for every voltage
+
+
+
+
 def main():
     #  master_tube_dict is a dictionary for storing all the Tube objects
     master_tube_dict = {}
@@ -64,9 +85,9 @@ def main():
     # Prompt the user to choose a folder, then make a list of all the files in the chosen directory to be processed
     batch_list = choose_folder()
 
-    tube_type = ask_tube_type('Example: 12AX7, 12BH7, 5759, 6L6GC, 6080, etc.', confirm=0)
+    tube_type = ask_tube_type('', confirm=0)
 
-    # Read and process every file in the batch_list, then add each one to the master_tube_dict
+    # Read and process every file in the batch_list, then add each resulting Tube object to the master_tube_dict
     for tube in batch_list:
         tube_object = import_tube_data_file(tube)
         tube_object.tube_type = tube_type
@@ -74,13 +95,19 @@ def main():
 
     # Print the number of tube objects that were created
     key_list = master_tube_dict.keys()
+
     print("\n", len(key_list), "tubes were added to the Master Tube Dictionary.")
 
+    # ref_tube = chooseTube(master_tube_dict)
+    # least_squares(master_tube_dict, ref_tube)
+
     # Lookup each tube in the master_tube_dict and print all its values
-    for key in key_list:
-        lookup_tube = master_tube_dict[key]
-        print("Tube number", lookup_tube.tube_ID, "is of type", lookup_tube.tube_type, "with X values", lookup_tube.x_values,
-              "and Y values", lookup_tube.y_values)
+#    for key in key_list:
+#        lookup_tube = master_tube_dict[key]
+#        print("Tube number", lookup_tube.tube_ID, "is of type", lookup_tube.tube_type, "with X values", lookup_tube.x_values,
+#              "and Y values", lookup_tube.y_values)
+
+
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
