@@ -5,7 +5,7 @@ import os   # needed for directory and file interaction
 import tkinter
 from tkinter import filedialog
 import tkinter.simpledialog as simpledialog
-
+import pandas as pd
 
 global tube_type
 
@@ -57,6 +57,29 @@ def import_tube_data_file(file_to_open):
                 return tube_object
 
 
+# Compares every value in the x_values list of each tube to the values in the first tube to make sure they're identical.
+def check_all_tubes_share_x_values(dict):
+    tube_list = list(dict.keys())
+    ref_tube = dict.get(tube_list[0])
+    ref_x_values = list(ref_tube.x_values)
+    for tube in tube_list:
+        temp_tube = dict.get(tube)
+        if temp_tube.x_values != ref_x_values:
+            print("Not all x_values are the same")
+            return False
+    print("All tubes have identical X values")
+    return True
+
+
+def dataFrame_list_builder(master_tube_dict):
+    df_tube_ID_list = list(master_tube_dict.keys())
+    first_tube = master_tube_dict.get(df_tube_ID_list[0])
+    column_list = first_tube.x_values
+
+    for tube in enumerate(df_tube_ID_list):
+        temp_tube = master_tube_dict.get(tube[1])
+
+
 # def least_squares(master_tube_dict, ref_tube):
 #     tube_list = master_tube_dict.keys()
 #     ref_tube = master_tube_dict.get(ref_tube)
@@ -97,6 +120,9 @@ def main():
     key_list = master_tube_dict.keys()
 
     print("\n", len(key_list), "tubes were added to the Master Tube Dictionary.")
+
+    if check_all_tubes_share_x_values(master_tube_dict) == True:
+        dataFrame_list_builder(master_tube_dict)
 
     # ref_tube = chooseTube(master_tube_dict)
     # least_squares(master_tube_dict, ref_tube)
