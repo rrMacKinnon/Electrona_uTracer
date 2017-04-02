@@ -65,40 +65,43 @@ def check_all_tubes_share_x_values(dict):
     for tube in tube_list:
         temp_tube = dict.get(tube)
         if temp_tube.x_values != ref_x_values:
-            print("Not all x_values are the same")
             return False
-    print("All tubes have identical X values")
-    return True
+        else:
+            len_of_x_values = len(ref_x_values)
+            print("All tubes have", len_of_x_values, "identical X values.")
+            return True
 
 
 def dataFrame_list_builder(master_tube_dict):
-    df_tube_ID_list = list(master_tube_dict.keys())
-    first_tube = master_tube_dict.get(df_tube_ID_list[0])
-    column_list = first_tube.x_values
+    master_tubeID_list = list(master_tube_dict.keys())
 
-    for tube in enumerate(df_tube_ID_list):
+    # build a list of column names
+    first_tube = master_tube_dict.get(master_tubeID_list[0])
+    tube_object_attribute_list = list((vars(first_tube)).keys())
+    column_list = first_tube.x_values  # declare each X value as a column
+    column_list.insert(0, tube_object_attribute_list[0])  # Insert Tube_ID to the front of the column list
+    column_list.insert(1, tube_object_attribute_list[-1]) # Insert tube-type into position 1 in the column list
+    column_list.insert(2, tube_object_attribute_list[3])  # Insert anode_voltage into position 2 of the column list
+
+# Build a gigantic list of lists containing complete data from all tubes
+
+    #  First build the list of empty lists, one empty list for each column
+    all_tubes_data_list = [[] for item in column_list]
+    for i in enumerate(column_list):
+        all_tubes_data_list[i[0]].append(i[1])
+
+    #  Now iterate through the master_tubeID_list and populate the empty lists with each tube's data
+    for tube in enumerate(master_tubeID_list):
         temp_tube = master_tube_dict.get(tube[1])
+        all_tubes_data_list[0].append(temp_tube.tube_ID)        # Add the tube_ID
+        all_tubes_data_list[1].append(temp_tube.tube_type)      # Add the tube_type
+        all_tubes_data_list[2].append(temp_tube.anode_voltage)  # Add the anode_voltage
+        for y_val in enumerate(temp_tube.y_values):             # Add all the y-value
+            position = y_val[0]+3
+            all_tubes_data_list[position].append(temp_tube.y_values[y_val[0]])
 
-
-# def least_squares(master_tube_dict, ref_tube):
-#     tube_list = master_tube_dict.keys()
-#     ref_tube = master_tube_dict.get(ref_tube)
-#     print(type(ref_tube))
-#     ref_tube_y_values = ref_tube.y_values
-#     print(ref_tube_y_values)
-#
-#     return other_tubes
-#
-# def chooseTube(master_tube_dict):
-#     ref_tube = input('Enter the tube number to be matched')
-#     if ref_tube in master_tube_dict.keys():
-#         print("We're going to match tube", ref_tube, "which has the following values:")
-#
-#     else:
-#         print("There's no tube in the Master Tube Dictionary with that name.")
-#     return # least squares lists for every voltage
-
-
+    for i in enumerate(all_tubes_data_list):
+        print("All tube data, List", i[0], ":", all_tubes_data_list[i[0]])
 
 
 def main():
@@ -121,17 +124,11 @@ def main():
 
     print("\n", len(key_list), "tubes were added to the Master Tube Dictionary.")
 
-    if check_all_tubes_share_x_values(master_tube_dict) == True:
-        dataFrame_list_builder(master_tube_dict)
+    if check_all_tubes_share_x_values(master_tube_dict) == False:
+        print("Processing failed because not all times have the same X values.")
 
-    # ref_tube = chooseTube(master_tube_dict)
-    # least_squares(master_tube_dict, ref_tube)
+    dataFrame_list_builder(master_tube_dict)
 
-    # Lookup each tube in the master_tube_dict and print all its values
-#    for key in key_list:
-#        lookup_tube = master_tube_dict[key]
-#        print("Tube number", lookup_tube.tube_ID, "is of type", lookup_tube.tube_type, "with X values", lookup_tube.x_values,
-#              "and Y values", lookup_tube.y_values)
 
 
 
