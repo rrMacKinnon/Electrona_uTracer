@@ -95,8 +95,7 @@ def dataFrame_list_builder(master_tube_dict):
         temp_tube_dict.update({'tube_ID':temp_tube.tube_ID})
         temp_tube_dict.update({'anode_voltage':temp_tube.anode_voltage})
         temp_tube_dict.update({'tube_type':temp_tube.tube_type})
-        measurements = dict(zip(temp_tube.x_values,temp_tube.y_values))
-        temp_tube_dict.update(measurements)
+        temp_tube_dict.update(dict(zip(temp_tube.x_values,temp_tube.y_values)))
         tubes_df.loc[tube] = pd.Series(temp_tube_dict)
     return tubes_df
 
