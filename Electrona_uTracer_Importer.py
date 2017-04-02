@@ -87,6 +87,8 @@ def dataFrame_list_builder(master_tube_dict):
 
     # Create empty dataframe with columns assigned
     tubes_df = pd.DataFrame(columns=column_list, index=[master_tubeID_list])
+
+    # Loop through the tube list and add each tube's values to the dataframe
     for tube in master_tubeID_list:
         temp_tube = master_tube_dict.get(tube)
         temp_tube_dict = {}
@@ -97,7 +99,6 @@ def dataFrame_list_builder(master_tube_dict):
         temp_tube_dict.update(measurements)
         tubes_df.loc[tube] = pd.Series(temp_tube_dict)
     return tubes_df
-
 
 
 def main():
