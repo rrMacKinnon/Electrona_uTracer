@@ -25,6 +25,7 @@ def choose_folder():
     root.directory = filedialog.askdirectory(title='Please select a directory containing uTracer files')
     chosen_folder = root.directory
     os.chdir(chosen_folder)
+    print("\n")
     print("chosen_folder:", chosen_folder)
     list_of_tube_data_files_in_dir = []
     for file in os.listdir(chosen_folder):
@@ -74,34 +75,29 @@ def check_all_tubes_share_x_values(dict):
 
 def dataFrame_list_builder(master_tube_dict):
     master_tubeID_list = list(master_tube_dict.keys())
-
-    # build a list of column names
     first_tube = master_tube_dict.get(master_tubeID_list[0])
     tube_object_attribute_list = list((vars(first_tube)).keys())
-    column_list = first_tube.x_values  # declare each X value as a column
+
+    # build a list of column names
+    column_list = []
+    column_list = column_list + first_tube.x_values
     column_list.insert(0, tube_object_attribute_list[0])  # Insert Tube_ID to the front of the column list
     column_list.insert(1, tube_object_attribute_list[-1]) # Insert tube-type into position 1 in the column list
     column_list.insert(2, tube_object_attribute_list[3])  # Insert anode_voltage into position 2 of the column list
 
-# Build a gigantic list of lists containing complete data from all tubes
+    # Create empty dataframe with columns assigned
+    tubes_df = pd.DataFrame(columns=column_list, index=[master_tubeID_list])
+    for tube in master_tubeID_list:
+        temp_tube = master_tube_dict.get(tube)
+        temp_tube_dict = {}
+        temp_tube_dict.update({'tube_ID':temp_tube.tube_ID})
+        temp_tube_dict.update({'anode_voltage':temp_tube.anode_voltage})
+        temp_tube_dict.update({'tube_type':temp_tube.tube_type})
+        measurements = dict(zip(temp_tube.x_values,temp_tube.y_values))
+        temp_tube_dict.update(measurements)
+        tubes_df.loc[tube] = pd.Series(temp_tube_dict)
+    return tubes_df
 
-    #  First build the list of empty lists, one empty list for each column
-    all_tubes_data_list = [[] for item in column_list]
-    for i in enumerate(column_list):
-        all_tubes_data_list[i[0]].append(i[1])
-
-    #  Now iterate through the master_tubeID_list and populate the empty lists with each tube's data
-    for tube in enumerate(master_tubeID_list):
-        temp_tube = master_tube_dict.get(tube[1])
-        all_tubes_data_list[0].append(temp_tube.tube_ID)        # Add the tube_ID
-        all_tubes_data_list[1].append(temp_tube.tube_type)      # Add the tube_type
-        all_tubes_data_list[2].append(temp_tube.anode_voltage)  # Add the anode_voltage
-        for y_val in enumerate(temp_tube.y_values):             # Add all the y-value
-            position = y_val[0]+3
-            all_tubes_data_list[position].append(temp_tube.y_values[y_val[0]])
-
-    for i in enumerate(all_tubes_data_list):
-        print("All tube data, List", i[0], ":", all_tubes_data_list[i[0]])
 
 
 def main():
@@ -122,13 +118,14 @@ def main():
     # Print the number of tube objects that were created
     key_list = master_tube_dict.keys()
 
-    print("\n", len(key_list), "tubes were added to the Master Tube Dictionary.")
+    print(len(key_list), "tubes were processed and added to the Master Tube Dictionary.")
 
     if check_all_tubes_share_x_values(master_tube_dict) == False:
         print("Processing failed because not all times have the same X values.")
 
-    dataFrame_list_builder(master_tube_dict)
-
+    print("\n")
+    tubes_df = dataFrame_list_builder(master_tube_dict)
+    print(tubes_df)
 
 
 
