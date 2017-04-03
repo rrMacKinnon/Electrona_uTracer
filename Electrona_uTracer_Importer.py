@@ -140,13 +140,7 @@ def main():
         print("Processing failed because not all tubes have the same X values.")
     else:
         tubes_df = dataFrame_list_builder(master_tube_dict)
-
-
-    print("\n")
-
-    # build the dataframe and populate it with all the data from the master_tube_dict
-
-    get_main_stats(tubes_df)
+        get_main_stats(tubes_df)
 
 
 # This is the standard boilerplate that calls the main() function.
