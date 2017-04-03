@@ -114,6 +114,7 @@ def get_main_stats(tube_df):
         # print(a)
         print('\n')
         # print("Mean:", tube_df['-50'].mean())
+    print(tube_df.describe())
 
 
 def main():
