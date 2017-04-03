@@ -29,10 +29,16 @@
       <file leaf-file-name="Electrona_uTracer_Importer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5377698">
-              <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.66366905">
+              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding>
                 <element signature="e#199#254#0" expanded="true" />
+                <element signature="e#401#659#0" expanded="false" />
+                <element signature="e#800#1281#0" expanded="false" />
+                <element signature="e#1360#1540#0" expanded="false" />
+                <element signature="e#1798#2356#0" expanded="false" />
+                <element signature="e#2523#2929#0" expanded="false" />
+                <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -117,6 +123,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Electrona_uTracer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Electrona_uTracer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Electrona_uTracer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SampleTubeData" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -438,7 +458,37 @@
       <option name="project" value="LOCAL" />
       <updated>1490803063146</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding functions to generate the lists that will be needed to create a dataFrame with Pandas.">
+      <created>1490978082123</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1490978082123</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added functions to generate the lists that will be needed to create a dataFrame with Pandas.">
+      <created>1491119055841</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1491119055841</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Pandas dataframe is successfully populated with data!">
+      <created>1491170589298</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1491170589298</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Pandas dataframe is successfully populated with data!">
+      <created>1491170767520</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1491170767520</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Pandas dataframe is successfully populated with data!">
+      <created>1491170874816</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1491170874816</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -447,16 +497,16 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16274865" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286219" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32171893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39929327" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398374" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -484,11 +534,14 @@
     <MESSAGE value="Cleaned up the comments for clarity." />
     <MESSAGE value="Added a second dialog box that asks for the user to enter the tube type.&#10;&#10;Added tube_type to the Tube class.&#10;" />
     <MESSAGE value="Starting to experiment with pandas and least squares curve matching" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting to experiment with pandas and least squares curve matching" />
+    <MESSAGE value="Adding functions to generate the lists that will be needed to create a dataFrame with Pandas." />
+    <MESSAGE value="Added functions to generate the lists that will be needed to create a dataFrame with Pandas." />
+    <MESSAGE value="Pandas dataframe is successfully populated with data!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pandas dataframe is successfully populated with data!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="7" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -499,6 +552,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
+            <element signature="e#401#659#0" expanded="false" />
+            <element signature="e#800#1281#0" expanded="false" />
+            <element signature="e#1360#1540#0" expanded="false" />
+            <element signature="e#1798#2356#0" expanded="false" />
+            <element signature="e#2523#2929#0" expanded="false" />
+            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -509,6 +568,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
+            <element signature="e#401#659#0" expanded="false" />
+            <element signature="e#800#1281#0" expanded="false" />
+            <element signature="e#1360#1540#0" expanded="false" />
+            <element signature="e#1798#2356#0" expanded="false" />
+            <element signature="e#2523#2929#0" expanded="false" />
+            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -519,6 +584,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
+            <element signature="e#401#659#0" expanded="false" />
+            <element signature="e#800#1281#0" expanded="false" />
+            <element signature="e#1360#1540#0" expanded="false" />
+            <element signature="e#1798#2356#0" expanded="false" />
+            <element signature="e#2523#2929#0" expanded="false" />
+            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -529,6 +600,12 @@
           <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
+            <element signature="e#401#659#0" expanded="false" />
+            <element signature="e#800#1281#0" expanded="false" />
+            <element signature="e#1360#1540#0" expanded="false" />
+            <element signature="e#1798#2356#0" expanded="false" />
+            <element signature="e#2523#2929#0" expanded="false" />
+            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -640,12 +717,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SampleTubeData/12.utd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleTubeData/10.utd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SampleTubeData/9.utd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/nanops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.022809">
+          <caret line="756" column="0" selection-start-line="756" selection-start-column="0" selection-end-line="756" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5377698">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.66366905">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
+            <element signature="e#401#659#0" expanded="false" />
+            <element signature="e#800#1281#0" expanded="false" />
+            <element signature="e#1360#1540#0" expanded="false" />
+            <element signature="e#1798#2356#0" expanded="false" />
+            <element signature="e#2523#2929#0" expanded="false" />
+            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>

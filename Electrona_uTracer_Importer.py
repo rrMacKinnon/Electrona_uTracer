@@ -99,6 +99,22 @@ def dataFrame_list_builder(master_tube_dict):
         tubes_df.loc[tube] = pd.Series(temp_tube_dict)
     return tubes_df
 
+def get_main_stats(tube_df):
+    column_list = list(tube_df.columns[3:])
+    for i in column_list:
+        print("Stats for %s bias" %i)
+        print("Minimum current: %s mA" %tube_df[i].min())
+        print("Maximum current: %s mA" %tube_df[i].max())
+
+        # print("Mean current:", (float(tube_df[i].sum())/(float(len(tube_df[i])))), "mA")
+        # print("Standard deviation:", tube_df[i].std())
+        # print("Minimum current: %s mA" %tube_df[i].min())
+        # print("\nDescribe Method: ", tube_df.describe())
+        # a = tube_df.describe()
+        # print(a)
+        print('\n')
+        # print("Mean:", tube_df['-50'].mean())
+
 
 def main():
     #  master_tube_dict is a dictionary for storing all the Tube objects
@@ -121,12 +137,14 @@ def main():
     print(len(key_list), "tubes were processed and added to the Master Tube Dictionary.")
 
     if check_all_tubes_share_x_values(master_tube_dict) == False:
-        print("Processing failed because not all times have the same X values.")
+        print("Processing failed because not all tubes have the same X values.")
 
     print("\n")
-    tubes_df = dataFrame_list_builder(master_tube_dict)
-    print(tubes_df)
 
+    # build the dataframe and populate it with all the data from the master_tube_dict
+    tubes_df = dataFrame_list_builder(master_tube_dict)
+
+    get_main_stats(tubes_df)
 
 
 # This is the standard boilerplate that calls the main() function.
