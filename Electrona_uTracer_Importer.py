@@ -138,11 +138,13 @@ def main():
 
     if check_all_tubes_share_x_values(master_tube_dict) == False:
         print("Processing failed because not all tubes have the same X values.")
+    else:
+        tubes_df = dataFrame_list_builder(master_tube_dict)
+
 
     print("\n")
 
     # build the dataframe and populate it with all the data from the master_tube_dict
-    tubes_df = dataFrame_list_builder(master_tube_dict)
 
     get_main_stats(tubes_df)
 

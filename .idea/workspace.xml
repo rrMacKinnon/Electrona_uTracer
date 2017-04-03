@@ -29,8 +29,8 @@
       <file leaf-file-name="Electrona_uTracer_Importer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66366905">
-              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.48021582">
+              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
               <folding>
                 <element signature="e#199#254#0" expanded="true" />
                 <element signature="e#401#659#0" expanded="false" />
@@ -38,7 +38,7 @@
                 <element signature="e#1360#1540#0" expanded="false" />
                 <element signature="e#1798#2356#0" expanded="false" />
                 <element signature="e#2523#2929#0" expanded="false" />
-                <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
+                <marker date="1491190460000" expanded="true" signature="2932:4275" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -488,7 +488,13 @@
       <option name="project" value="LOCAL" />
       <updated>1491170874816</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Pandas dataframe is successfully populated with data!">
+      <created>1491190385933</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1491190385933</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -557,7 +563,7 @@
             <element signature="e#1360#1540#0" expanded="false" />
             <element signature="e#1798#2356#0" expanded="false" />
             <element signature="e#2523#2929#0" expanded="false" />
-            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
+            <marker date="1491190460000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -573,7 +579,7 @@
             <element signature="e#1360#1540#0" expanded="false" />
             <element signature="e#1798#2356#0" expanded="false" />
             <element signature="e#2523#2929#0" expanded="false" />
-            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
+            <marker date="1491190460000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -589,7 +595,7 @@
             <element signature="e#1360#1540#0" expanded="false" />
             <element signature="e#1798#2356#0" expanded="false" />
             <element signature="e#2523#2929#0" expanded="false" />
-            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
+            <marker date="1491190460000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -605,7 +611,7 @@
             <element signature="e#1360#1540#0" expanded="false" />
             <element signature="e#1798#2356#0" expanded="false" />
             <element signature="e#2523#2929#0" expanded="false" />
-            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
+            <marker date="1491190460000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -751,8 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66366905">
-          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.48021582">
+          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
             <element signature="e#401#659#0" expanded="false" />
@@ -760,7 +766,7 @@
             <element signature="e#1360#1540#0" expanded="false" />
             <element signature="e#1798#2356#0" expanded="false" />
             <element signature="e#2523#2929#0" expanded="false" />
-            <marker date="1491190377000" expanded="true" signature="2932:4275" placeholder="..." />
+            <marker date="1491190460000" expanded="true" signature="2932:4275" placeholder="..." />
           </folding>
         </state>
       </provider>
