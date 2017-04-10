@@ -24,6 +24,7 @@ def choose_folder():
     root.withdraw()
     root.directory = filedialog.askdirectory(title='Please select a directory containing uTracer files')
     chosen_folder = root.directory
+    working_path = chosen_folder
     os.chdir(chosen_folder)
     print("\n")
     print("chosen_folder:", chosen_folder)
@@ -105,17 +106,7 @@ def get_main_stats(tube_df):
         print("Stats for %s bias" %i)
         print("Minimum current: %s mA" %tube_df[i].min())
         print("Maximum current: %s mA" %tube_df[i].max())
-
-        # print("Mean current:", (float(tube_df[i].sum())/(float(len(tube_df[i])))), "mA")
-        # print("Standard deviation:", tube_df[i].std())
-        # print("Minimum current: %s mA" %tube_df[i].min())
-        # print("\nDescribe Method: ", tube_df.describe())
-        # a = tube_df.describe()
-        # print(a)
         print('\n')
-        # print("Mean:", tube_df['-50'].mean())
-    print(tube_df.describe())
-
 
 def main():
     #  master_tube_dict is a dictionary for storing all the Tube objects
@@ -133,21 +124,26 @@ def main():
         master_tube_dict.update({tube_object.tube_ID: tube_object})
 
     # Print the number of tube objects that were created
-    key_list = master_tube_dict.keys()
+    print(len(master_tube_dict.keys()), "tubes were processed and added to the Master Tube Dictionary.")
 
-    print(len(key_list), "tubes were processed and added to the Master Tube Dictionary.")
-
+    # As a requirement to building the dataframe, check that all tubes have identical X values
     if check_all_tubes_share_x_values(master_tube_dict) == False:
         print("Processing failed because not all tubes have the same X values.")
     else:
+        # Build a dataframe containing all data from all tube objects
         tubes_df = dataFrame_list_builder(master_tube_dict)
-        get_main_stats(tubes_df)
 
+        # Print some stuff to prove it worked
+        print(get_main_stats(tubes_df))
+        print(tubes_df)
+
+        # Change the current path back to where this script is
+        script_path = os.path.dirname(os.path.abspath(__file__))
+        os.chdir(script_path)
+
+        # Save the dataframe to a file in the current working directory
+        tubes_df.to_pickle('MasterTubeDataFrame.pkl')
 
 # This is the standard boilerplate that calls the main() function.
 if __name__ == '__main__':
   main()
-
-
-
-
