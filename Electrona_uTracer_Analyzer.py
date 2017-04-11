@@ -9,9 +9,9 @@ def import_tube_data(filename):
     tubes_df = pd.read_pickle(filename)
 
     #Convert all columns containing current measurements to floats
-    for i in tubes_df:
+    columns = list(tubes_df.columns.values[3:])
+    for i in columns:
         tubes_df[i] = pd.to_numeric(tubes_df[i])
-
     return tubes_df
 
 def plot_all(tubes_df):
@@ -27,8 +27,7 @@ def plot_two_rows(tubes_df):
     second_tube_data = tubes_df.loc[second_tube]
     plt.plot(second_tube_data[4:])
     plt.show()    #Convert all columns containing current measurements to floats
-    columns = list(tubes_df.columns.values[3:])
-    for i in tubes_df:
+    for i in columns:
         tubes_df[i] = pd.to_numeric(tubes_df[i])
 
 
@@ -40,6 +39,34 @@ def plot_range(tubes_df):
         plt.plot(temp[4:])
     plt.show()
 
+def find_match(tubes_df):
+
+    # Ask the user which tube should be matched
+    user_choice = input("Please enter the tube number to match:")
+    tube_to_match = tubes_df.loc[str(user_choice)]
+    # print("Tube to Match:", tube_to_match)
+    # print("Tubes_DF", tubes_df)
+
+    # Add a new column with the suffix '_diff^2' to each bias voltage column and fill with zeros
+    bias_list = list(tubes_df)[3:]
+    for i in bias_list:
+        newcolumn = str(i + '_diff^2')
+        tubes_df[newcolumn] = tubes_df[i]
+
+
+    print("Tube to match:", tube_to_match[4])
+
+    tweak_list = list(tubes_df)[16:]
+    # print("Tweak List:", tweak_list)
+
+
+    #  Sample compute squares:  works on a static line.  Need to loop this through the dataframe
+    tubes_df[tweak_list[0]] = tubes_df[tweak_list[0]].apply(lambda x: abs(x - tube_to_match[3])**2)
+
+    print("\nThis is a column of the difference squares of -50 relative to the ref tube:\n", tubes_df[tweak_list[0]])
+
+
+
 def greeting(tubes_df):
     print("\n\nELECTRONAUT'S FANCY TUBE DATA COMPARATOR")
     print("\nOPTIONS")
@@ -47,7 +74,9 @@ def greeting(tubes_df):
     print("1)  Plot all tubes")
     print("2)  Plot a range of tubes")
     print("3)  Plot a pair of tubes")
-    print("4)  EXIT")
+    print("4)  Find matches to a particular tube")
+    print("5)  EXIT")
+
     print("Please enter the number for the option you'd like:")
     user_choice = int(input("\n>>>>>> "))
     if user_choice == 1:
@@ -57,6 +86,8 @@ def greeting(tubes_df):
     elif user_choice == 3:
         plot_two_rows(tubes_df)
     elif user_choice == 4:
+        find_match(tubes_df)
+    elif user_choice == 5:
         print("\n\ntake it easy...\n\n")
         sys.exit()
     else:
