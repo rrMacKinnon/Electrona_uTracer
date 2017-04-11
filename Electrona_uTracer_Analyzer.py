@@ -44,8 +44,6 @@ def find_match(tubes_df):
     # Ask the user which tube should be matched
     user_choice = input("Please enter the tube number to match:")
     tube_to_match = tubes_df.loc[str(user_choice)]
-    # print("Tube to Match:", tube_to_match)
-    # print("Tubes_DF", tubes_df)
 
     # Add a new column with the suffix '_diff^2' to each bias voltage column and fill with zeros
     bias_list = list(tubes_df)[3:]
@@ -53,14 +51,10 @@ def find_match(tubes_df):
         newcolumn = str(i + '_diff^2')
         tubes_df[newcolumn] = tubes_df[i]
 
-
-    print("Tube to match:", tube_to_match[4])
-
+    # Make a list of columns that need data
     tweak_list = list(tubes_df)[16:]
-    # print("Tweak List:", tweak_list)
 
-
-    #  Sample compute squares:  works on a static line.  Need to loop this through the dataframe
+    #  Sample compute squares, works on one column.  Need to loop this through the dataframe.
     tubes_df[tweak_list[0]] = tubes_df[tweak_list[0]].apply(lambda x: abs(x - tube_to_match[3])**2)
 
     print("\nThis is a column of the difference squares of -50 relative to the ref tube:\n", tubes_df[tweak_list[0]])
