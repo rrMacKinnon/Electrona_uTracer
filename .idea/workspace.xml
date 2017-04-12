@@ -2,56 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5baf35b-9467-477b-af21-355d264abbee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/1.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/10.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/11.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/12.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/13.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/14.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/15.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/16.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/17.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/18.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/19.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/2.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/20.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/21.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/22.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/23.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/24.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/25.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/26.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/27.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/28.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/29.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/3.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/30.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/31.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/32.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/33.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/34.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/35.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/36.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/37.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/38.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/39.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/4.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/40.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/42.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/43.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/44.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/45.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/46.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/47.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/48.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/49.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/5.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/50.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/6.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/7.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/8.utd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SampleTubeData/9.utd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Electrona_uTracer_Analyzer.py" afterPath="$PROJECT_DIR$/Electrona_uTracer_Analyzer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/1.utd" afterPath="$PROJECT_DIR$/SampleTubeData/1.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/10.utd" afterPath="$PROJECT_DIR$/SampleTubeData/10.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/11.utd" afterPath="$PROJECT_DIR$/SampleTubeData/11.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/12.utd" afterPath="$PROJECT_DIR$/SampleTubeData/12.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/13.utd" afterPath="$PROJECT_DIR$/SampleTubeData/13.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/14.utd" afterPath="$PROJECT_DIR$/SampleTubeData/14.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/15.utd" afterPath="$PROJECT_DIR$/SampleTubeData/15.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/16.utd" afterPath="$PROJECT_DIR$/SampleTubeData/16.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/17.utd" afterPath="$PROJECT_DIR$/SampleTubeData/17.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/18.utd" afterPath="$PROJECT_DIR$/SampleTubeData/18.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/19.utd" afterPath="$PROJECT_DIR$/SampleTubeData/19.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/2.utd" afterPath="$PROJECT_DIR$/SampleTubeData/2.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/20.utd" afterPath="$PROJECT_DIR$/SampleTubeData/20.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/21.utd" afterPath="$PROJECT_DIR$/SampleTubeData/21.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/22.utd" afterPath="$PROJECT_DIR$/SampleTubeData/22.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/23.utd" afterPath="$PROJECT_DIR$/SampleTubeData/23.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/24.utd" afterPath="$PROJECT_DIR$/SampleTubeData/24.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/25.utd" afterPath="$PROJECT_DIR$/SampleTubeData/25.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/26.utd" afterPath="$PROJECT_DIR$/SampleTubeData/26.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/27.utd" afterPath="$PROJECT_DIR$/SampleTubeData/27.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/28.utd" afterPath="$PROJECT_DIR$/SampleTubeData/28.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/29.utd" afterPath="$PROJECT_DIR$/SampleTubeData/29.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/3.utd" afterPath="$PROJECT_DIR$/SampleTubeData/3.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/30.utd" afterPath="$PROJECT_DIR$/SampleTubeData/30.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/31.utd" afterPath="$PROJECT_DIR$/SampleTubeData/31.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/32.utd" afterPath="$PROJECT_DIR$/SampleTubeData/32.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/33.utd" afterPath="$PROJECT_DIR$/SampleTubeData/33.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/34.utd" afterPath="$PROJECT_DIR$/SampleTubeData/34.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/35.utd" afterPath="$PROJECT_DIR$/SampleTubeData/35.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/36.utd" afterPath="$PROJECT_DIR$/SampleTubeData/36.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/37.utd" afterPath="$PROJECT_DIR$/SampleTubeData/37.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/38.utd" afterPath="$PROJECT_DIR$/SampleTubeData/38.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/39.utd" afterPath="$PROJECT_DIR$/SampleTubeData/39.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/4.utd" afterPath="$PROJECT_DIR$/SampleTubeData/4.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/40.utd" afterPath="$PROJECT_DIR$/SampleTubeData/40.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/42.utd" afterPath="$PROJECT_DIR$/SampleTubeData/42.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/43.utd" afterPath="$PROJECT_DIR$/SampleTubeData/43.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/44.utd" afterPath="$PROJECT_DIR$/SampleTubeData/44.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/45.utd" afterPath="$PROJECT_DIR$/SampleTubeData/45.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/46.utd" afterPath="$PROJECT_DIR$/SampleTubeData/46.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/47.utd" afterPath="$PROJECT_DIR$/SampleTubeData/47.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/48.utd" afterPath="$PROJECT_DIR$/SampleTubeData/48.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/49.utd" afterPath="$PROJECT_DIR$/SampleTubeData/49.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/5.utd" afterPath="$PROJECT_DIR$/SampleTubeData/5.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/50.utd" afterPath="$PROJECT_DIR$/SampleTubeData/50.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/6.utd" afterPath="$PROJECT_DIR$/SampleTubeData/6.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/7.utd" afterPath="$PROJECT_DIR$/SampleTubeData/7.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/8.utd" afterPath="$PROJECT_DIR$/SampleTubeData/8.utd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SampleTubeData/9.utd" afterPath="$PROJECT_DIR$/SampleTubeData/9.utd" />
     </list>
     <list id="813752e4-9824-42af-bb50-b6e0acd22224" name="Failed commit: Default" comment="Changed the 'from tkinter import *' statement to 'import tkinter' and updated the references to it explicitly." />
     <list id="369ee032-bfdd-4eec-bf1d-3e0281183ed1" name="sampleData" comment="" />
@@ -74,11 +75,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Electrona_uTracer_Importer.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Electrona_uTracer_Importer.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5888755">
-              <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
               <folding>
                 <element signature="e#199#254#0" expanded="true" />
                 <element signature="e#4342#4581#0" expanded="false" />
@@ -87,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Electrona_uTracer_Analyzer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Electrona_uTracer_Analyzer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5380435">
+              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -520,7 +521,13 @@
       <option name="project" value="LOCAL" />
       <updated>1491885847113</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Replaced bad sample tube data files.">
+      <created>1492025030041</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1492025030041</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -529,16 +536,16 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18255578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32046783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3200469" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39742085" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -572,17 +579,11 @@
     <MESSAGE value="Electrona_uTracer_Importer now only contain importing and processing functions, resulting in a tube dataframe saved to disk.  &#10;&#10;New Electrona_uTracer_Analyzer.py module reads the tube dataframe file and handles provides an interactive menu and some options for plotting the tube data. &#10;" />
     <MESSAGE value="Got a difference-squares thing working.  It reads the values of the -50V column, takes the absolute value of the difference between the values and the ref_tube value, squares it, and returns the result in the column called '-50_diff^2''.&#10;&#10;Need to apply this to all the other columns." />
     <MESSAGE value="Cleanups" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleanups" />
+    <MESSAGE value="Replaced bad sample tube data files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Replaced bad sample tube data files." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
@@ -798,23 +799,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py">
+    <entry file="file://$PROJECT_DIR$/SampleTubeData/1.utd">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.3090909">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Importer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5888755">
-          <caret line="73" column="22" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="33" selection-start-line="63" selection-start-column="33" selection-end-line="63" selection-end-column="33" />
           <folding>
             <element signature="e#199#254#0" expanded="true" />
             <element signature="e#4342#4581#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5380435">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
