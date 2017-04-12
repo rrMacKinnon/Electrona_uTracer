@@ -42,8 +42,8 @@
       <file leaf-file-name="Electrona_uTracer_Analyzer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.2214155">
-              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.57028115">
+              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -89,7 +89,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-6" />
     <option name="y" value="22" />
-    <option name="width" value="1342" />
+    <option name="width" value="1500" />
     <option name="height" value="971" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -461,14 +461,26 @@
       <option name="project" value="LOCAL" />
       <updated>1491792494019</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Got a difference-squares thing working.  It reads the values of the -50V column, takes the absolute value of the difference between the values and the ref_tube value, squares it, and returns the result in the column called '-50_diff^2''.&#10;&#10;Need to apply this to all the other columns.">
+      <created>1491879349688</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1491879349688</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Cleanups">
+      <created>1491885847113</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1491885847113</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="22" width="1342" height="971" extended-state="0" />
+    <frame x="-6" y="22" width="1500" height="971" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20439062" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18255578" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329849" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -511,11 +523,20 @@
     <MESSAGE value="Added functions to generate the lists that will be needed to create a dataFrame with Pandas." />
     <MESSAGE value="Pandas dataframe is successfully populated with data!" />
     <MESSAGE value="Electrona_uTracer_Importer now only contain importing and processing functions, resulting in a tube dataframe saved to disk.  &#10;&#10;New Electrona_uTracer_Analyzer.py module reads the tube dataframe file and handles provides an interactive menu and some options for plotting the tube data. &#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Electrona_uTracer_Importer now only contain importing and processing functions, resulting in a tube dataframe saved to disk.  &#10;&#10;New Electrona_uTracer_Analyzer.py module reads the tube dataframe file and handles provides an interactive menu and some options for plotting the tube data. &#10;" />
+    <MESSAGE value="Got a difference-squares thing working.  It reads the values of the -50V column, takes the absolute value of the difference between the values and the ref_tube value, squares it, and returns the result in the column called '-50_diff^2''.&#10;&#10;Need to apply this to all the other columns." />
+    <MESSAGE value="Cleanups" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanups" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -733,10 +754,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3321234">
+          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Electrona_uTracer_Analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2214155">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.57028115">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
