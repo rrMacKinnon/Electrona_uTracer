@@ -1,3 +1,6 @@
+# TODO:  The match-finding algorithms should remove the matched sets from the master dataframe as it computes subsequent
+# TODO:  matched sets.  Otherwise, subsequent sets may contain previously paired-tubes and will be invalid.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import sys
@@ -94,48 +97,51 @@ def find_match(tubes_df):
         print("\n"*20)
 
 def find_best_matched_set(tubes_df):
-#
-    # UNDER CONSTRUCTIONN message at greeting
-    print("\n"*20)
-    print("This function is still being developed\n")
-    tube_list = tubes_df['tube_ID'].tolist()
-    time.sleep(3)
 
-    # Function goes here:
+    # Build a list of all the tubes in the dataframe.
+    tube_list = tubes_df['tube_ID'].tolist()
 
     # Get number of tubes to match
-    # n_matches = input("How many matched tubes would you like in the set?")
-    #
-    # for tube in tube_list:
-    #     tube_to_match = tubes_df.loc[str(str(tube))]
-    #     bias_list = list(tubes_df)[3:]  # The list of bias voltage columns;  i.e. -50, -46, -42, -38, -etc.
-    #     bias_diff_list = []             # The list of new _diff^2 columns, to hold the difference values from tube_to_match
-    #
-    #     # For every bias voltage column in the DataFrame, add a new column with the suffix '_diff^2' after the name.
-    #     for i in bias_list:
-    #         newcolumn = str(i + '_diff^2')
-    #         tubes_df[newcolumn] = tubes_df[i]
-    #         bias_diff_list.append(newcolumn)
-    #
-    #     # Compute the square of the difference of each current measurement for every tube, compared to the tube_to_match
-    #     # Put all the data into the appropriate _diff^2 column.
-    #     for i in range(len(bias_diff_list)):
-    #         tubes_df[bias_diff_list[i]] = tubes_df[bias_diff_list[i]].apply(lambda x: abs(x - tube_to_match[i+3])**2)
-    #
-    #     # Add a column called squares_sum and compute the sum of all the diff squares on each row
-    #     tubes_df['squares_sum'] = tubes_df[bias_diff_list].sum(axis=1)
-    #
-    #     # Sort ascending by squares_sum.
-    #     tubes_df_sorted = tubes_df.sort_values('squares_sum')
-    #
-    #     # Print the results
-    #     print("\n\n\nThe %s best matches to Tube ID #%s are:\n" % (n_matches, tube_to_match))
-    #     match_list_pdseries = tubes_df_sorted['tube_ID']
-    #     match_list = match_list_pdseries.tolist()
-    #     match_list = match_list[0:(int(n_matches)+1)]
-    #     for i in match_list:
-    #         print(i)
-    #     return match_list
+    n_matches = input("How many matched tubes would you like in the set?")
+
+    # Create a list to store the master match list sets
+    master_match_list = []
+
+    # Create a dataframe to store the scores of the tube sets by primary tube_ID
+    score_df = pd.DataFrame()
+
+    for tube in tube_list:
+        temp_df = tubes_df.copy()
+        tube_to_match = temp_df.loc[str(str(tube))]
+        bias_list = list(temp_df)[3:]  # The list of bias voltage columns;  i.e. -50, -46, -42, -38, -etc.
+        bias_diff_list = []            # The list of new _diff^2 columns, to hold the difference values
+
+        # For every bias voltage column in the DataFrame, add a new column with the suffix '_diff^2' after the name.
+        for i in bias_list:
+            newcolumn = str(i + '_diff^2')
+            temp_df[newcolumn] = temp_df[i]
+            bias_diff_list.append(newcolumn)
+
+        # Compute the square of the difference of each current measurement for every tube, compared to the tube_to_match
+        # Put all the data into the appropriate _diff^2 column.
+        for i in range(len(bias_diff_list)):
+            temp_df[bias_diff_list[i]] = temp_df[bias_diff_list[i]].apply(lambda x: abs(x - tube_to_match[i+3])**2)
+
+        # Add a column called squares_sum and compute the sum of all the diff squares on each row
+        temp_df['squares_sum'] = temp_df[bias_diff_list].sum(axis=1)
+
+        # Sort ascending by squares_sum.
+        temp_df_sorted = temp_df.sort_values('squares_sum')
+
+        # Calculate the sum of all the diff squares to be used as an overall score
+        tube_set_score = temp_df_sorted['squares_sum'].iloc[0:(int(n_matches)+1)].sum()
+        # print("Total least-squares score for the matched tube set:", tube_set_score)
+        score_df.set_value(tube, 'tube_id', tube)
+        score_df.set_value(tube, 'score', tube_set_score)
+        score_df_sorted = score_df.sort_values('score')
+
+    print(score_df_sorted)
+
 
 
 
