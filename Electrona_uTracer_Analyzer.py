@@ -139,10 +139,8 @@ def find_best_matched_set(tubes_df):
         score_df.set_value(tube, 'tube_id', tube)
         score_df.set_value(tube, 'score', tube_set_score)
         score_df_sorted = score_df.sort_values('score')
-
+    print("\nLeast-Squares Matching Score (lower is better):")
     print(score_df_sorted)
-
-
 
 
 def import_pickle_build_dataframe():
