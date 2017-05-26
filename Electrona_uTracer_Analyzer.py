@@ -110,6 +110,8 @@ def find_best_matched_set(tubes_df):
     # Create a dataframe to store the scores of the tube sets by primary tube_ID
     score_df = pd.DataFrame()
 
+
+
     for tube in tube_list:
         temp_df = tubes_df.copy()
         tube_to_match = temp_df.loc[str(str(tube))]
@@ -184,7 +186,7 @@ def greeting():
         find_match(tubes_df)
     elif int(user_choice) == 5:
         find_best_matched_set(tubes_df)
-    elif int(user_choice) == 6:
+    elif int(user_choice) =y 6:
         print("\n\ntake it easy...\n\n")
         sys.exit()
     else:
