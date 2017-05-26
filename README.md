@@ -4,7 +4,7 @@
 This project aims to provide the necessary tools to compare any number of vacuum tubes based on measured data, determine which tubes have matching characteristics, and provide visual representations of the match as well as some statistical information of the sample lot overall.
 
 ## Using the software
-The software consists of an importer module and an analyzer module.  The importer must be run first to generate the dataframe from the tube data files, afterwhich the analyzer can be run.
+The software consists of an importer module and an analyzer module.  The importer must be run first to process the tube data files and generate a dataframe, then the analyzer can be run.
 
 ## Running the Importer
 The user must be prepared with a folder containing any number of uTracer .utd files, each containing current measurements from a series of grid bias voltages.  (A sample dataset is included in a directory called 'SampleTubeData".)
