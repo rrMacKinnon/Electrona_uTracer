@@ -1,5 +1,5 @@
 # Electrona_uTracer
-This project aims to provide the necessary tools to compare any number of vacuum tubes based on measured data, determine which tubes have matching characteristics, and provide visual representations of the match as well as the deviation of the sample lot overall.
+This project aims to provide the necessary tools to compare any number of vacuum tubes based on measured data, determine which tubes have matching characteristics, and provide visual representations of the match as well as some statistical information of the sample lot overall.
 
 To run the software, the user must be prepared with a folder containing any number of uTracer .utd files, each containing current measurements from a series of grid bias voltages.
 
