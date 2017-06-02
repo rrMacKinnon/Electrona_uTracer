@@ -2,7 +2,7 @@
 # ready to be converted to a Pandas DataFrame
 
 import os   # needed for directory and file interaction
-import tkinter
+import tkinter  # needed for GUI objects, i.e. 'Chooser' dialog box
 from tkinter import filedialog
 import tkinter.simpledialog as simpledialog
 import pandas as pd
