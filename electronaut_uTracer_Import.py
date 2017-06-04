@@ -6,7 +6,7 @@ chosen_folder = input("Please enter the path to the folder containing the uTrace
 print("PLEASE NOTE: This script assumes all the files in the chosen directory are for the same type of tube!\n")        
 tube_type = input("What type of tubes are these? ")
 
-print("\n— — — — — \n")
+print("\n— — — — — \n")
 
 
 os.chdir(chosen_folder)
@@ -88,4 +88,3 @@ df.columns = column_names
 # Report how many tubes were processed
 total_tubes = df.shape[0]
 print("A dataframe containing all", total_tubes, "tubes was successfully created.")
-
