@@ -2,9 +2,8 @@ import pandas as pd
 import numpy as np
 import os
 
-chosen_folder = input("Please enter the path to the folder containing the uTracer files: ")
-print("PLEASE NOTE: This script assumes all the files in the chosen directory are for the same type of tube!\n")        
-tube_type = input("What type of tubes are these? ")
+chosen_folder = input("Please enter the path to the folder containing the uTracer files: ")       
+tube_type = input("\nWhat type of tubes are these? ")
 
 print("\n— — — — — \n")
 
