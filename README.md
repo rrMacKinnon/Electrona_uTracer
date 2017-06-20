@@ -3,6 +3,9 @@
 ## Description
 This project aims to provide the necessary tools to compare any number of vacuum tubes based on measured data, determine which tubes have matching characteristics, and provide visual representations of the match as well as some statistical information of the sample lot overall.
 
+## Status
+So far the matching is working splendidly.  The graphing is still to be done.
+
 ## Execution
 1) Copy the path to a directory containing tube data files.  (There are samples files in a directory called 'SampleTubeData_1_to_196')
 
