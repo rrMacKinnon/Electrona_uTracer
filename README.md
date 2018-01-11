@@ -7,7 +7,7 @@ This code was written to help me solve a problem and get even better performance
 
 
 ## Description
-This project consists of a Jupyter Notebook named "Electrona_uTracer.ipynb".  The first cell imports a module called  "Electronaut_uTracer_Importer.py", which prompts the user for a path to a folder containing uTracer files formatted as "blocks", then builds a pandas dataframe.  The subsequent cells provide a crude step-by-step interface to the comparison and plotting functions.
+This project consists of a Jupyter Notebook named "Electrona_uTracer.ipynb".  The first cell imports a module called  "ElectronauTracer_Importer", which prompts the user for a path to a folder containing uTracer files formatted as "blocks", then builds a pandas dataframe.  The subsequent cells provide a crude step-by-step interface to the comparison and plotting functions.
 
 Sample tube data can be found in the directory called SampleTubeData.
 
