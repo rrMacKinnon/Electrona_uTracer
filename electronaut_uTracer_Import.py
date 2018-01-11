@@ -8,6 +8,7 @@ tube_type = input("\nWhat type of tubes are these? ")
 print("\n— — — — — \n")
 
 
+# Re-write this as a list comprehension:
 os.chdir(chosen_folder)
 list_of_tube_data_files_in_dir = []
 for file in os.listdir(chosen_folder):
