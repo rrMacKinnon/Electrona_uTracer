@@ -3,7 +3,7 @@
 
 "Variable-mu" style audio compression amplifiers require well-matched tubes to achieve their best performance.  Unlike fixed-mu tubes that can be matched with few or even one data point, variable-mu tubes operate dynamically across a range of values and should ideally match throughout that range, requiring multiple data points to be compared and matched. This project is intended to help compare any number of variable-mu or remote-cutoff vacuum tubes based on data measured using the excellent uTracer curve tracer by Ronald Dekker (http://www.dos4ever.com/uTracer3/uTracer3_pag0.html).  
 
-This code was written to help me solve a problem and get even better performance out of my M97 Compressor/Limiter, and I doubt there are other humans on the planet who will be interested in using it, but if I'm wrong and anyone has questions, feel free to get in touch!
+This code was written to help me solve a problem and get even better performance out of my M97 Compressor/Limiters, and I doubt there are other humans on the planet who will be interested in using it, but if I'm wrong and anyone has questions, feel free to get in touch!
 
 
 ## Description
