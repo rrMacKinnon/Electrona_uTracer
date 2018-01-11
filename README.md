@@ -18,7 +18,7 @@ So far the matching is working splendidly.  I had all kinds of big ideas for the
 ## Execution
 1) Copy the path to a directory containing tube data files.  (There are samples files in a directory called 'SampleTubeData')
 
-2) Open the Jupyter Notebook called "Electrona_uTracer.ipynb".  
+2) Open the Jupyter Notebook called "ElectronauTracer.ipynb".  
 
 3) Run the top cell, and paste in the path
 
