@@ -1,12 +1,11 @@
 
 # ElectronauTracer
 
-"Variable-mu" style audio compression amplifiers require well-matched tubes to achieve their best performance.  Unlike fixed-mu tubes that can be matched with few or even one data point, variable-mu tubes operate dynamically across a range of values and should ideally match throughout that range, requiring multiple data points to be compared and matched. 
-
-This project is intended to help compare any number of variable-mu (or 'remote-cutoff') vacuum tubes based on data measured using the excellent uTracer curve tracer by Ronald Dekker (http://www.dos4ever.com/uTracer3/uTracer3_pag0.html).  
+"Variable-mu" style audio compression amplifiers require well-matched tubes to achieve their best performance.  Unlike fixed-mu tubes that can often be matched with few or even one data point, variable-mu tubes operate dynamically across a range of values and should ideally match throughout that range, requiring multiple data points to be compared and matched. 
 
 This code was written to help me find the best matching sets of tubes from an inventory of about 1200 pieces, in order to squeeze a little more performance out of my M97 Compressor/Limiters.  I worked on it until I could verify the accuracy of the predictions, then took the results and moved on to other projects; hence, it's kinda ugly and not particularly polished, but the results are delicious.
 
+The tube measurement data was compiled using the excellent uTracer Curve Tracer by Ronald Dekker (http://www.dos4ever.com/uTracer3/uTracer3_pag0.html). 
 
 ## Description
 This project consists of a Jupyter Notebook named "ElectronauTracer.ipynb".  The first cell imports a module called  "ElectronauTracer_Importer", which prompts the user for a path to a folder containing uTracer files formatted as "blocks", then builds a pandas dataframe.  The subsequent cells provide a crude step-by-step interface to the comparison and plotting functions.
