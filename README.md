@@ -3,14 +3,13 @@
 
 "Variable-mu" style audio compression amplifiers require well-matched tubes to achieve their best performance.  Unlike fixed-mu tubes that can be matched with few or even one data point, variable-mu tubes operate dynamically across a range of values and should ideally match throughout that range, requiring multiple data points to be compared and matched. This project is intended to help compare any number of variable-mu or remote-cutoff vacuum tubes based on data measured using the excellent uTracer curve tracer by Ronald Dekker (http://www.dos4ever.com/uTracer3/uTracer3_pag0.html).  
 
-This code was written to help me solve a problem and get even better performance out of my M97 Compressor/Limiters, and I doubt there are other humans on the planet who will be interested in using it, but if I'm wrong and anyone has questions, feel free to get in touch!
+This code was written to help me solve a problem and squeeze the last bit of performance out of my M97 Compressor/Limiters.  I worked on it until I could verify the accuracy of the predictions, then took the results and moved on to other projects; hence, it's far from polished, but it works well and the benefits are significant.
 
 
 ## Description
 This project consists of a Jupyter Notebook named "ElectronauTracer.ipynb".  The first cell imports a module called  "ElectronauTracer_Importer", which prompts the user for a path to a folder containing uTracer files formatted as "blocks", then builds a pandas dataframe.  The subsequent cells provide a crude step-by-step interface to the comparison and plotting functions.
 
 Sample tube data can be found in the directory called SampleTubeData.
-
 
 ## Status
 So far the matching is working splendidly.  I had all kinds of big ideas for the graphing and plotting, but once I had this functioning and giving me reliable results, I got excited and went back to building tube amps.
@@ -20,7 +19,7 @@ So far the matching is working splendidly.  I had all kinds of big ideas for the
 
 2) Open the Jupyter Notebook called "ElectronauTracer.ipynb".  
 
-3) Run the top cell, and paste in the path
+3) Run the top cell. and paste in the path when it asks
 
 4) Enter a tube type (for the samples, the type is '5749'. (Only supports int names right now))
 
